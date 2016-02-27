@@ -1,74 +1,51 @@
 #Human Activity Recognition Using Smartphones Dataset
 
 #Fields
-* "subject"                   
-* "activity"                 
-* "tBodyAcc-mean-X"           
-* "tBodyAcc-mean-Y"          
-* "tBodyAcc-mean-Z"           
-* "tBodyAcc-std-X"           
-* "tBodyAcc-std-Y"            
-* "tBodyAcc-std-Z"           
-* "tGravityAcc-mean-X"        
-* "tGravityAcc-mean-Y"       
-* "tGravityAcc-mean-Z"        
-* "tGravityAcc-std-X"        
-* "tGravityAcc-std-Y"         
-* "tGravityAcc-std-Z"        
-* "tBodyAccJerk-mean-X"       
-* "tBodyAccJerk-mean-Y"      
-* "tBodyAccJerk-mean-Z"       
-* "tBodyAccJerk-std-X"       
-* "tBodyAccJerk-std-Y"        
-* "tBodyAccJerk-std-Z"       
-* "tBodyGyro-mean-X"          
-* "tBodyGyro-mean-Y"         
-* "tBodyGyro-mean-Z"          
-* "tBodyGyro-std-X"          
-* "tBodyGyro-std-Y"           
-* "tBodyGyro-std-Z"          
-* "tBodyGyroJerk-mean-X"      
-* "tBodyGyroJerk-mean-Y"     
-* "tBodyGyroJerk-mean-Z"      
-* "tBodyGyroJerk-std-X"      
-* "tBodyGyroJerk-std-Y"       
-* "tBodyGyroJerk-std-Z"      
-* "tBodyAccMag-mean"          
-* "tBodyAccMag-std"          
-* "tGravityAccMag-mean"       
-* "tGravityAccMag-std"       
-* "tBodyAccJerkMag-mean"      
-* "tBodyAccJerkMag-std"      
-* "tBodyGyroMag-mean"         
-* "tBodyGyroMag-std"         
-* "tBodyGyroJerkMag-mean"     
-* "tBodyGyroJerkMag-std"     
-* "fBodyAcc-mean-X"           
-* "fBodyAcc-mean-Y"          
-* "fBodyAcc-mean-Z"           
-* "fBodyAcc-std-X"           
-* "fBodyAcc-std-Y"            
-* "fBodyAcc-std-Z"           
-* "fBodyAccJerk-mean-X"       
-* "fBodyAccJerk-mean-Y"      
-* "fBodyAccJerk-mean-Z"       
-* "fBodyAccJerk-std-X"       
-* "fBodyAccJerk-std-Y"        
-* "fBodyAccJerk-std-Z"       
-* "fBodyGyro-mean-X"          
-* "fBodyGyro-mean-Y"         
-* "fBodyGyro-mean-Z"          
-* "fBodyGyro-std-X"          
-* "fBodyGyro-std-Y"           
-* "fBodyGyro-std-Z"          
-* "fBodyAccMag-mean"          
-* "fBodyAccMag-std"          
-* "fBodyBodyAccJerkMag-mean"  
-* "fBodyBodyAccJerkMag-std"  
-* "fBodyBodyGyroMag-mean"     
-* "fBodyBodyGyroMag-std"     
-* "fBodyBodyGyroJerkMag-mean" 
-* "fBodyBodyGyroJerkMag-std"
+
+First Header | Second Header
+------------ | -------------
+"subject" | ID the subject who performed the activity for each window sample. Its range is from 1 to 30.                   
+"activity" | Name of the activity that was performed                 
+"BodyAcc-mean-X" | Mean acceleration signal for body in X variable       
+* "BodyAcc-mean-Y" | Mean acceleration signal for body in Y variable          
+* "BodyAcc-mean-Z" | Mean acceleration signal for body in Z variable 
+* "BodyAcc-std-X"   | Standard Deviation acceleration signal for body in X variable         
+* "BodyAcc-std-Y"   | Standard Deviation acceleration signal for body in Y variable              
+* "BodyAcc-std-Z"   | Standard Deviation acceleration signal for body in Z variable             
+* "GravityAcc-mean-X"   | Mean gravity signal for body in X variable          
+* "GravityAcc-mean-Y"    | Mean gravity signal for body in Y variable    
+* "GravityAcc-mean-Z"   | Mean gravity signal for body in Z variable      
+* "GravityAcc-std-X"    | Standard Deviation gravity signal for body in X variable     
+* "GravityAcc-std-Y"    | Standard Deviation gravity signal for body in Y variable       
+* "GravityAcc-std-Z"   | Standard Deviation gravity signal for body in Z variable       
+* "BodyAccJerk-mean-X"    | Mean jerk signal for body in X variable  when performing acceleration signal gathering   
+* "BodyAccJerk-mean-Y"    | Mean jerk signal for body in Y variable  when performing acceleration signal gathering     
+* "BodyAccJerk-mean-Z"    | Mean jerk signal for body in Z variable  when performing acceleration signal gathering      
+* "BodyAccJerk-std-X"      | Standard Deviation jerk signal for body in X variable  when performing acceleration signal gathering    
+* "BodyAccJerk-std-Y"      | Standard Deviation jerk signal for body in Y variable  when performing acceleration signal gathering     
+* "BodyAccJerk-std-Z"     | Standard Deviation jerk signal for body in Z variable  when performing acceleration signal gathering    
+* "BodyGyro-mean-X"       | Mean Gyroscope signal for body in X variable    
+* "BodyGyro-mean-Y"       | Mean Gyroscope signal for body in Y variable   
+* "BodyGyro-mean-Z"       | Mean Gyroscope signal for body in Z variable    
+* "BodyGyro-std-X"         | Standard Deviation Gyroscope signal for body in X variable  
+* "BodyGyro-std-Y"         | Standard Deviation Gyroscope signal for body in Y variable   
+* "BodyGyro-std-Z"         | Standard Deviation Gyroscope signal for body in Z variable  
+* "BodyGyroJerk-mean-X"    | Mean jerk signal for body in X variable when performing gyroscope signal gathering      
+* "BodyGyroJerk-mean-Y"     | Mean jerk signal for body in Y variable when performing gyroscope signal gathering  
+* "BodyGyroJerk-mean-Z"     | Mean jerk signal for body in Z variable when performing gyroscope signal gathering   
+* "BodyGyroJerk-std-X"      | Standard Deviation jerk signal for body in X variable when performing gyroscope signal gathering  
+* "BodyGyroJerk-std-Y"      | Standard Deviation jerk signal for body in Y variable when performing gyroscope signal gathering   
+* "BodyGyroJerk-std-Z"      | Standard Deviation jerk signal for body in Z variable when performing gyroscope signal gathering  
+* "BodyAccMag-mean"        | Mean acceleration signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm    
+* "BodyAccMag-std"          | Standard Deviation acceleration signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm    
+* "GravityAccMag-mean"    | Mean gravity signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm     
+* "GravityAccMag-std"      | Standard Deviation gravity signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm   
+* "BodyAccJerkMag-mean"  | Mean jerk signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm when performing acceleration signal gathering         
+* "BodyAccJerkMag-std" | Standard Deviation jerk signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm when performing acceleration signal gathering      
+* "BodyGyroMag-mean" | Mean gyroscope signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm             
+* "BodyGyroMag-std"  | Standard Deviation gyroscope signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm            
+* "BodyGyroJerkMag-mean" | Mean jerk signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm when performing gyroscope signal gathering      
+* "BodyGyroJerkMag-std"  | Standard Deviation jerk signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm when performing gyroscope signal gathering      
 
 
 #The dataset includes the following files
@@ -180,6 +157,46 @@ for(i in 1:length(d[1,])){
 ##Rename the grouped columns (subject and activity)
 * colnames(tidyData)[1] <- "subject"
 * colnames(tidyData)[2] <- "activity"
+
+##This whole part till the writing to csv basically divide the t and f data to 2 files and merge it together
+##There will be some missing columns in f data which we will need to add in order to rbind with t data
+tmpData <- tidyData[,43:68]
+tmpData <- cbind(tidyData[,1:2], tmpData)
+for(k in 1:3){
+    index <- 8
+    list<- c("tGravityAcc-mean-X", "tGravityAcc-mean-Y","tGravityAcc-mean-Z" ,"tGravityAcc-std-X","tGravityAcc-std-Y" ,"tGravityAcc-std-Z" )
+    if(k == 2){
+        index <- 26
+        list<-c("tBodyGyroJerk-mean-X","tBodyGyroJerk-mean-Y","tBodyGyroJerk-mean-Z" ,"tBodyGyroJerk-std-X","tBodyGyroJerk-std-Y" ,"tBodyGyroJerk-std-Z" )
+    }    
+    else if(k == 3){
+        index <- 34
+        list<-c("tGravityAccMag-mean" ,"tGravityAccMag-std")
+    }
+    
+    for(i in 1:length(list)){
+        tmpData <- data.frame(tmpData[1:index],"x"="",tmpData[(index+1):ncol(tmpData)])
+        index <- index + 1
+        colnames(tmpData)[index] <- list[i]
+    }
+}
+for(i in 3:length(tmpData[1,])){
+    if(i <= (length(tmpData[1,]) - 6)){
+        colnames(tmpData)[i] <- substring(colnames(tmpData)[i], 2, nchar(colnames(tmpData)[i]))
+    }
+    else{
+        colnames(tmpData)[i] <- substring(colnames(tmpData)[i], 6, nchar(colnames(tmpData)[i]))
+    }
+    
+    colnames(tmpData)[i] <- str_replace_all(colnames(tmpData)[i], "([.])", "-")
+}
+
+t <- tidyData[,1:42]
+for(i in 3:length(t[1,])){
+    colnames(t)[i] <- substring(colnames(t)[i], 2, nchar(colnames(t)[i]))
+}
+
+tidyData <- rbind(t, tmpData)
 
 ##write the tidy data to csv
 * write.csv(tidyData, 'DatasetHumanActivityRecognition.csv')
