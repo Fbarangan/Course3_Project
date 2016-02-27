@@ -1,4 +1,5 @@
 library(data.table)
+library(stringr)
 
 #Set directory path
 path = getwd()
@@ -90,8 +91,48 @@ tidyData<-aggregate(d[,2:( length(d[1,])-1),with = FALSE], by=list(d$subject,d$a
 colnames(tidyData)[1] <- "subject"
 colnames(tidyData)[2] <- "activity"
 
+#This whole part till the writing to csv basically divide the t and f data to 2 files and merge it together
+#There will be some missing columns in f data which we will need to add in order to rbind with t data
+tmpData <- tidyData[,43:68]
+tmpData <- cbind(tidyData[,1:2], tmpData)
+for(k in 1:3){
+    index <- 8
+    list<- c("tGravityAcc-mean-X", "tGravityAcc-mean-Y","tGravityAcc-mean-Z" ,"tGravityAcc-std-X","tGravityAcc-std-Y" ,"tGravityAcc-std-Z" )
+    if(k == 2){
+        index <- 26
+        list<-c("tBodyGyroJerk-mean-X","tBodyGyroJerk-mean-Y","tBodyGyroJerk-mean-Z" ,"tBodyGyroJerk-std-X","tBodyGyroJerk-std-Y" ,"tBodyGyroJerk-std-Z" )
+    }    
+    else if(k == 3){
+        index <- 34
+        list<-c("tGravityAccMag-mean" ,"tGravityAccMag-std")
+    }
+    
+    for(i in 1:length(list)){
+        tmpData <- data.frame(tmpData[1:index],"x"="",tmpData[(index+1):ncol(tmpData)])
+        index <- index + 1
+        colnames(tmpData)[index] <- list[i]
+    }
+}
+for(i in 3:length(tmpData[1,])){
+    if(i <= (length(tmpData[1,]) - 6)){
+        colnames(tmpData)[i] <- substring(colnames(tmpData)[i], 2, nchar(colnames(tmpData)[i]))
+    }
+    else{
+        colnames(tmpData)[i] <- substring(colnames(tmpData)[i], 6, nchar(colnames(tmpData)[i]))
+    }
+    
+    colnames(tmpData)[i] <- str_replace_all(colnames(tmpData)[i], "([.])", "-")
+}
+
+t <- tidyData[,1:42]
+for(i in 3:length(t[1,])){
+    colnames(t)[i] <- substring(colnames(t)[i], 2, nchar(colnames(t)[i]))
+}
+
+tidyData <- rbind(t, tmpData)
+
 #write the tidy data to csv
-write.csv(tidyData, 'DatasetHumanActivityRecognition.csv')
+write.csv(tidy, 'DatasetHumanActivityRecognition.csv')
 
 
 
