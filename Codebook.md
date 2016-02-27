@@ -105,8 +105,9 @@ First Header | Second Header
 
 #Executing the script
 ##Library required
-In this script we will required to use data.table
+In this script we will required to use data.table and stringr
 * library(data.table)
+* library(stringr)
 
 ##Set directory path
 * path = getwd()

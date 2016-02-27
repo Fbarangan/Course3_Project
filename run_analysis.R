@@ -132,7 +132,7 @@ for(i in 3:length(t[1,])){
 tidyData <- rbind(t, tmpData)
 
 #write the tidy data to csv
-write.csv(tidy, 'DatasetHumanActivityRecognition.csv')
+write.table(tidyData, 'DatasetHumanActivityRecognition.csv')
 
 
 
