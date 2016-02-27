@@ -7,45 +7,45 @@ First Header | Second Header
 "subject" | ID the subject who performed the activity for each window sample. Its range is from 1 to 30.                   
 "activity" | Name of the activity that was performed                 
 "BodyAcc-mean-X" | Mean acceleration signal for body in X variable       
-* "BodyAcc-mean-Y" | Mean acceleration signal for body in Y variable          
-* "BodyAcc-mean-Z" | Mean acceleration signal for body in Z variable 
-* "BodyAcc-std-X"   | Standard Deviation acceleration signal for body in X variable         
-* "BodyAcc-std-Y"   | Standard Deviation acceleration signal for body in Y variable              
-* "BodyAcc-std-Z"   | Standard Deviation acceleration signal for body in Z variable             
-* "GravityAcc-mean-X"   | Mean gravity signal for body in X variable          
-* "GravityAcc-mean-Y"    | Mean gravity signal for body in Y variable    
-* "GravityAcc-mean-Z"   | Mean gravity signal for body in Z variable      
-* "GravityAcc-std-X"    | Standard Deviation gravity signal for body in X variable     
-* "GravityAcc-std-Y"    | Standard Deviation gravity signal for body in Y variable       
-* "GravityAcc-std-Z"   | Standard Deviation gravity signal for body in Z variable       
-* "BodyAccJerk-mean-X"    | Mean jerk signal for body in X variable  when performing acceleration signal gathering   
-* "BodyAccJerk-mean-Y"    | Mean jerk signal for body in Y variable  when performing acceleration signal gathering     
-* "BodyAccJerk-mean-Z"    | Mean jerk signal for body in Z variable  when performing acceleration signal gathering      
-* "BodyAccJerk-std-X"      | Standard Deviation jerk signal for body in X variable  when performing acceleration signal gathering    
-* "BodyAccJerk-std-Y"      | Standard Deviation jerk signal for body in Y variable  when performing acceleration signal gathering     
-* "BodyAccJerk-std-Z"     | Standard Deviation jerk signal for body in Z variable  when performing acceleration signal gathering    
-* "BodyGyro-mean-X"       | Mean Gyroscope signal for body in X variable    
-* "BodyGyro-mean-Y"       | Mean Gyroscope signal for body in Y variable   
-* "BodyGyro-mean-Z"       | Mean Gyroscope signal for body in Z variable    
-* "BodyGyro-std-X"         | Standard Deviation Gyroscope signal for body in X variable  
-* "BodyGyro-std-Y"         | Standard Deviation Gyroscope signal for body in Y variable   
-* "BodyGyro-std-Z"         | Standard Deviation Gyroscope signal for body in Z variable  
-* "BodyGyroJerk-mean-X"    | Mean jerk signal for body in X variable when performing gyroscope signal gathering      
-* "BodyGyroJerk-mean-Y"     | Mean jerk signal for body in Y variable when performing gyroscope signal gathering  
-* "BodyGyroJerk-mean-Z"     | Mean jerk signal for body in Z variable when performing gyroscope signal gathering   
-* "BodyGyroJerk-std-X"      | Standard Deviation jerk signal for body in X variable when performing gyroscope signal gathering  
-* "BodyGyroJerk-std-Y"      | Standard Deviation jerk signal for body in Y variable when performing gyroscope signal gathering   
-* "BodyGyroJerk-std-Z"      | Standard Deviation jerk signal for body in Z variable when performing gyroscope signal gathering  
-* "BodyAccMag-mean"        | Mean acceleration signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm    
-* "BodyAccMag-std"          | Standard Deviation acceleration signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm    
-* "GravityAccMag-mean"    | Mean gravity signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm     
-* "GravityAccMag-std"      | Standard Deviation gravity signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm   
-* "BodyAccJerkMag-mean"  | Mean jerk signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm when performing acceleration signal gathering         
-* "BodyAccJerkMag-std" | Standard Deviation jerk signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm when performing acceleration signal gathering      
-* "BodyGyroMag-mean" | Mean gyroscope signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm             
-* "BodyGyroMag-std"  | Standard Deviation gyroscope signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm            
-* "BodyGyroJerkMag-mean" | Mean jerk signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm when performing gyroscope signal gathering      
-* "BodyGyroJerkMag-std"  | Standard Deviation jerk signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm when performing gyroscope signal gathering      
+"BodyAcc-mean-Y" | Mean acceleration signal for body in Y variable          
+"BodyAcc-mean-Z" | Mean acceleration signal for body in Z variable 
+"BodyAcc-std-X"   | Standard Deviation acceleration signal for body in X variable         
+"BodyAcc-std-Y"   | Standard Deviation acceleration signal for body in Y variable              
+"BodyAcc-std-Z"   | Standard Deviation acceleration signal for body in Z variable             
+"GravityAcc-mean-X"   | Mean gravity signal for body in X variable          
+"GravityAcc-mean-Y"    | Mean gravity signal for body in Y variable    
+"GravityAcc-mean-Z"   | Mean gravity signal for body in Z variable      
+"GravityAcc-std-X"    | Standard Deviation gravity signal for body in X variable     
+"GravityAcc-std-Y"    | Standard Deviation gravity signal for body in Y variable       
+"GravityAcc-std-Z"   | Standard Deviation gravity signal for body in Z variable       
+"BodyAccJerk-mean-X"    | Mean jerk signal for body in X variable  when performing acceleration signal gathering   
+"BodyAccJerk-mean-Y"    | Mean jerk signal for body in Y variable  when performing acceleration signal gathering     
+"BodyAccJerk-mean-Z"    | Mean jerk signal for body in Z variable  when performing acceleration signal gathering      
+"BodyAccJerk-std-X"      | Standard Deviation jerk signal for body in X variable  when performing acceleration signal gathering    
+"BodyAccJerk-std-Y"      | Standard Deviation jerk signal for body in Y variable  when performing acceleration signal gathering     
+"BodyAccJerk-std-Z"     | Standard Deviation jerk signal for body in Z variable  when performing acceleration signal gathering    
+"BodyGyro-mean-X"       | Mean Gyroscope signal for body in X variable    
+"BodyGyro-mean-Y"       | Mean Gyroscope signal for body in Y variable   
+"BodyGyro-mean-Z"       | Mean Gyroscope signal for body in Z variable    
+"BodyGyro-std-X"         | Standard Deviation Gyroscope signal for body in X variable  
+"BodyGyro-std-Y"         | Standard Deviation Gyroscope signal for body in Y variable   
+"BodyGyro-std-Z"         | Standard Deviation Gyroscope signal for body in Z variable  
+"BodyGyroJerk-mean-X"    | Mean jerk signal for body in X variable when performing gyroscope signal gathering      
+"BodyGyroJerk-mean-Y"     | Mean jerk signal for body in Y variable when performing gyroscope signal gathering  
+"BodyGyroJerk-mean-Z"     | Mean jerk signal for body in Z variable when performing gyroscope signal gathering   
+"BodyGyroJerk-std-X"      | Standard Deviation jerk signal for body in X variable when performing gyroscope signal gathering  
+"BodyGyroJerk-std-Y"      | Standard Deviation jerk signal for body in Y variable when performing gyroscope signal gathering   
+"BodyGyroJerk-std-Z"      | Standard Deviation jerk signal for body in Z variable when performing gyroscope signal gathering  
+"BodyAccMag-mean"        | Mean acceleration signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm    
+"BodyAccMag-std"          | Standard Deviation acceleration signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm    
+"GravityAccMag-mean"    | Mean gravity signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm     
+"GravityAccMag-std"      | Standard Deviation gravity signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm   
+"BodyAccJerkMag-mean"  | Mean jerk signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm when performing acceleration signal gathering         
+"BodyAccJerkMag-std" | Standard Deviation jerk signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm when performing acceleration signal gathering      
+"BodyGyroMag-mean" | Mean gyroscope signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm             
+"BodyGyroMag-std"  | Standard Deviation gyroscope signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm            
+"BodyGyroJerkMag-mean" | Mean jerk signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm when performing gyroscope signal gathering      
+"BodyGyroJerkMag-std"  | Standard Deviation jerk signal for body in X variable with Magnitude of the signals calculated using the Euclidean norm when performing gyroscope signal gathering      
 
 
 #The dataset includes the following files
