@@ -160,8 +160,9 @@ for(i in 1:length(d[1,])){
 
 ##This whole part till the writing to csv basically divide the t and f data to 2 files and merge it together
 ##There will be some missing columns in f data which we will need to add in order to rbind with t data
-tmpData <- tidyData[,43:68]
-tmpData <- cbind(tidyData[,1:2], tmpData)
+* tmpData <- tidyData[,43:68]
+* tmpData <- cbind(tidyData[,1:2], tmpData)
+
 for(k in 1:3){
     index <- 8
     list<- c("tGravityAcc-mean-X", "tGravityAcc-mean-Y","tGravityAcc-mean-Z" ,"tGravityAcc-std-X","tGravityAcc-std-Y" ,"tGravityAcc-std-Z" )
@@ -180,6 +181,7 @@ for(k in 1:3){
         colnames(tmpData)[index] <- list[i]
     }
 }
+
 for(i in 3:length(tmpData[1,])){
     if(i <= (length(tmpData[1,]) - 6)){
         colnames(tmpData)[i] <- substring(colnames(tmpData)[i], 2, nchar(colnames(tmpData)[i]))
@@ -191,12 +193,13 @@ for(i in 3:length(tmpData[1,])){
     colnames(tmpData)[i] <- str_replace_all(colnames(tmpData)[i], "([.])", "-")
 }
 
-t <- tidyData[,1:42]
+* t <- tidyData[,1:42]
+
 for(i in 3:length(t[1,])){
     colnames(t)[i] <- substring(colnames(t)[i], 2, nchar(colnames(t)[i]))
 }
 
-tidyData <- rbind(t, tmpData)
+* tidyData <- rbind(t, tmpData)
 
 ##write the tidy data to csv
 * write.csv(tidyData, 'DatasetHumanActivityRecognition.csv')
