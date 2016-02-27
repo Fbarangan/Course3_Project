@@ -4,7 +4,7 @@
 * "subject"                   
 * "activity"                 
 * "tBodyAcc-mean-X"           
-*"tBodyAcc-mean-Y"          
+* "tBodyAcc-mean-Y"          
 * "tBodyAcc-mean-Z"           
 * "tBodyAcc-std-X"           
 * "tBodyAcc-std-Y"            
@@ -87,8 +87,8 @@ In this script we will required to use data.table
 * library(data.table)
 
 ##Set directory path
-*path = getwd()
-*path = paste(path, '/dataset', sep="")
+* path = getwd()
+* path = paste(path, '/dataset', sep="")
 
 ##function to cater reading and converting the x-train/x_test data files
 Note that, as the input files for x data have a lot of unwanted rows and columns, we will need to carefully select and clean up the data after loading
@@ -138,17 +138,19 @@ fileToDataTable <- function(f) {
 
 
 ##subset the dt data using the boolean vector (feature$featureCode)
-select <- c("subject", "activity", feature$featureCode)
-d = dt[, select, with = FALSE]
+* select <- c("subject", "activity", feature$featureCode)
+* d = dt[, select, with = FALSE]
 
-activity <- fread(file.path(path, "activity_labels.txt"))
-setnames(activity, names(activity), c("index", "activity"))
+* activity <- fread(file.path(path, "activity_labels.txt"))
+* setnames(activity, names(activity), c("index", "activity"))
 
 
 ##merge the activity label name (index) with the data in d (subject)
-d <- merge(d, activity, by.x = "activity", by.y = "index", all.x = TRUE)
-#remove the 1st column 
-d <- d[, 2:length(d[1,]),with = FALSE]
+*d <- merge(d, activity, by.x = "activity", by.y = "index", all.x = TRUE)
+
+
+##remove the 1st column 
+* d <- d[, 2:length(d[1,]),with = FALSE]
 
 
 ##change the columns (Vx - Vxxx) in d using the feature name
@@ -169,18 +171,18 @@ for(i in 1:length(d[1,])){
 }
 
 ##set key
-setkey(d,subject, activity)
+* setkey(d,subject, activity)
 
 ##group by subject and activity and determine the mean for each variable
 ##result is a tidy data
-tidyData<-aggregate(d[,2:( length(d[1,])-1),with = FALSE], by=list(d$subject,d$activity), FUN=mean)
+* tidyData<-aggregate(d[,2:( length(d[1,])-1),with = FALSE], by=list(d$subject,d$activity), FUN=mean)
 
 ##Rename the grouped columns (subject and activity)
-colnames(tidyData)[1] <- "subject"
-colnames(tidyData)[2] <- "activity"
+* colnames(tidyData)[1] <- "subject"
+* colnames(tidyData)[2] <- "activity"
 
 ##write the tidy data to csv
-write.csv(tidyData, 'DatasetHumanActivityRecognition.csv')
+* write.csv(tidyData, 'DatasetHumanActivityRecognition.csv')
 
 
 
